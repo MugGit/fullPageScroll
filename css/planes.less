@@ -1,0 +1,213 @@
+@import "variables.less";
+@import "reset.less";
+@import "mediaQueries.less";
+@import "styles.less";
+@import "formularioAcceso.less";
+
+.topTitle:extend(.prices h2){
+	text-align: left;
+	font-size: 2.5em;
+	display: inline-block;
+	margin: 1.1em 0.5em 0.5em;
+	span:extend(.prices h2 span){
+	}
+}
+.listColumn{	
+	.listColumn()
+}
+.wrapper p.description{  clear: both;
+    color: #666;
+    font-family: "Muli",sans-serif;
+    padding: 0 2%;
+    position: relative;
+    top: -12em;
+    width: 68%;}
+.wrapper p.descriptionTrial{ 
+    clear: both;
+    color: #333;
+    font-family: "Muli",sans-serif;
+    margin: 2%;
+    padding: 4% 0;
+  }
+.columnPrice:extend(.column){
+	margin-bottom: 4em;
+	padding-bottom: 1em;
+	width:23.6%;
+	z-index:50;
+		p{ font-size:1.2em;}
+	.columnTopPrice{
+	h3:extend(.column h3){ margin:1em auto 0.1em;
+		span{ clear:both; font-size:0.5em; color:#555; text-transform:none; display:block;}
+	}
+	h4{ font-size:2em;.numbersFont(#ddd);}
+	p:extend(.prices p){ width:90%; font-size:0.9em; }
+	p:nth-last-child(1){margin: 1em auto;}
+	}
+	hr:extend(.column hr){display:inline-block;}
+	.priceColumn:extend(.column .price){
+	span:extend(.column .price span){}
+
+	}
+	a:extend(.column a){}
+}
+
+.backgroundDispositivos{background:url(../img/dispositivos.png) no-repeat 50% 100%;
+	display: block;
+	width: 50%;
+	height: 489px;
+	position: absolute;
+	top: 27em;
+	left: 9%;
+
+}
+
+.backgroundDisPlatinum{background:url(../img/dispositivosPlatinum.png) no-repeat 50% 100%;
+	display: block;
+	height: 30%;
+	position: absolute;
+	background-size:100%;
+	margin-top:-280px; 
+}
+.backgroundDisPremium{background:url(../img/dispositivos.png) no-repeat 50% 100%;
+	display: block;
+	height: 30%;
+	position: absolute;
+	background-size:100%;
+	margin-top:-280px; 
+}
+
+.backgroundDisSilver{background:url(../img/dispositivosSilver.png) no-repeat 50% 100%;
+	display: block;
+	height: 30%;
+	position: absolute;
+	background-size:100%;
+	margin-top:-280px; 
+}
+.backgroundDisGold{background:url(../img/dispositivosGold.png) no-repeat 50% 100%;
+	display: block;
+	height: 30%;
+	position: absolute;
+	background-size:100%;
+	margin-top:-280px; 
+}
+.orangePlan{
+	background:@orange;
+	clear:both;
+	display:inline-block;
+	margin-top:1em;
+	width:100%;
+	.wrapper{
+		.SectionTitle{
+			display:inline-block;
+			font-size:2.25em;
+			margin-top:6em;
+			.secondaryFont(@black);
+			 padding:1em 0;
+			span{
+			color:@white;
+			font-size:1.2em;
+			text-transform: uppercase;
+			.mainFont(#fff);}
+			
+		}
+		.rightText{
+		float: right;
+		margin-top: -2em;
+		text-indent: 2em;
+		text-align: right;
+		line-height: 1.9em;
+		margin-right: 2.8%;
+		font-size: 1.375em;
+		.secondaryFont(#333);
+			strong{
+				font-size:1.3em;
+				.mainFont(@orange);
+				 text-transform:uppercase;
+				 }
+			span{
+				font-size:1.1em; font-weight:bolder;}
+		}
+	.columnCircle{
+		float:left;
+		width:33%;
+		a:extend(.column a){background-color:#2b2a29;width:36%;color:@orange;margin-bottom:1.6em; font-weight:normal; font-size:1.4em;
+		&:hover{.opacity(70,0.7);background-color:#2b2a29;width:36%;color:@orange;margin-bottom:1.6em; font-weight:normal; font-size:1.4em;}}
+		p{
+			color:#333;
+			text-align: center;
+			width: 63%;
+			margin: 1em auto;}
+		
+		.priceCircle{
+			background: #2b2a29 url("../img/texture-black.png") repeat;
+			color: @white;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			margin: 0px auto;
+			display: block;
+			h3:extend(.column h3){ margin-bottom: 0;
+    		padding-top: 1.8em;  }
+			p:extend(.column .price){
+				font-size: 1em;
+				margin-top: -0.6em;
+				span{font-size:3.9em;  letter-spacing: -0.05em;}}}}
+			}
+}
+//Freemium
+.backgroundDispositivosFreemium:extend(.backgroundDispositivos){
+	background:url(../img/dispositivosFreemium.png) no-repeat 50% 100%;
+	left:7%;
+	top:18em;
+}
+.orangePlanFreemium:extend(.orangePlan){
+	height:11em;
+	display:block;
+	.rightText:extend(.orangePlan .wrapper .rightText){
+	strong:extend(.orangePlan .wrapper .rightText strong){}
+	span:extend(.orangePlan .wrapper .rightText span){}
+	}
+}
+.priceColumnFreemium:extend(.column .price){
+	font-size:6em!important;
+	span:extend(.column .price span){}
+}
+.columnPrice{color:#d5d3d3;text-align:center; margin-bottom:6em;}
+.formularioAccesoFreemium:extend(.formularioAcceso){
+	display: inline-block;
+	width: 100%;
+	margin-top:1em;
+input:extend(.background-circle .blackLoginCircle .formularioAcceso input){
+	font-size:1em;
+	height: 2.5em;
+	left:8%;
+	top:0;
+	width:78%;
+&[type="submit"]{background:@orange;
+				border:1px solid #e0b875;
+				box-shadow: none!important;
+				color:#402b16;
+				cursor:pointer;
+				float:left;
+				font-family: 'oswald', sans-serif;
+				font-size:1.25em;
+				font-weight:bolder;
+				left:8%;
+				margin-top:0.45em;	
+				padding:0;
+				text-transform:uppercase;
+				top:0;
+				width:84%;
+				}
+		}
+input[type="submit"]:hover{background: @black;
+					border:1px solid #000;
+					color:@orange;
+					top:0;
+					left:8%;
+					width:84%;
+}
+}
+
+
+

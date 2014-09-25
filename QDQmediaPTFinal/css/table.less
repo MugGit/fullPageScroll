@@ -1,0 +1,74 @@
+@import "variables.less";
+@import "reset.less";
+
+section{display:block;
+		margin:0 auto;
+		width:100%; 
+		article.services{
+						display:inline-block;
+						width:98%;  
+						padding:1%;}
+	 
+		h1{font-size:2.250em;
+			margin:0.5em 0 0em;
+		 .secondaryFont(#222);
+		 span{.mainFont(@orange);
+		 	 font-size:1.250em;
+			 margin-left:0.3em;
+			  text-transform:uppercase;
+				}
+		 }
+		 p{.secondaryFont(#333); margin:1em 0 2em;}
+}
+
+/*table services*/	
+table{ width:100%; text-align:center; margin-bottom:2em; border:0;
+		th, td{border-right:1px solid #fff;  }
+		a.btn{
+			background-color:#222;
+			.borderRadius(3px);
+			display:block;
+			font-size:1.1em;
+			font-weight:normal;
+			.mainFont(#fff);
+			margin: 0 auto 1em;
+		    padding: 0.5em 0;
+			text-transform:uppercase;
+		    width: 120px;
+			&:hover{background-color:#fcc674;
+			.mainFont(#222);}
+			}
+		h2, p{
+			span{ clear:both; font-size:0.6em; color:#555; text-transform:none; display:block;}
+			clear:both;
+			font-size:1.375em;
+			font-weight:normal;
+			.mainFont(#222);
+			margin:0.5em 0 0;
+			}
+		p{ margin: 0 0 0.2em;}
+		tr td{
+			font-size:0.875em;
+			.secondaryFont(#222);
+			line-height:3.2em;
+			img{ vertical-align:middle;}
+			} 
+		tr td:first-child{ width:25%; text-align:left; padding-left:1em;}
+		tr:nth-child(2n+1) td:first-child{ background-color:#e3e3e3;}
+		tr:nth-child(2n) td:first-child{ background-color:#f0f0f0;}
+		tr:nth-child(2n+1) td:nth-child(2),tr:nth-child(2n+1) td:nth-child(6){ background-color:#f3f3f3;}
+		tr:nth-child(2n) td:nth-child(2),tr:nth-child(2n) td:nth-child(6){ background-color:#f8f8f8;}
+		tr:nth-child(2n+1) td:nth-child(3),tr:nth-child(2n+1) td:nth-child(5){ background-color:#e3e3e3;}
+		tr:nth-child(2n) td:nth-child(3),tr:nth-child(2n) td:nth-child(5){ background-color:#f0f0f0;}
+		tr:nth-child(2n+1) td:nth-child(4){ background-color:#fcc674;}
+		tr:nth-child(2n) td:nth-child(4){ background-color:#fce2b9;}
+	    tfoot tr td{ line-height:1.5em; a.btn{margin:1em auto;}}
+		tfoot > tr > td:first-child, thead > tr > th:first-child{ background-color:inherit !important;}
+		tfoot > tr > td:nth-child(4){ background-color:#222 !important; a.btn{ background-color:#fcc674; color:#222;}}
+		thead tr th:nth-child(2), thead tr th:nth-child(6){ background-color:#f8f8f8;}
+		thead tr th:nth-child(3), thead tr th:nth-child(5){ background-color:#f0f0f0;}
+		thead tr th:nth-child(4){ background-color:#222; h2,p{color:#fcc674;} a.btn{ background-color:#fcc674; color:#222;}}
+
+}
+
+ 

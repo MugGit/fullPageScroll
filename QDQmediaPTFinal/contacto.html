@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<title>A agência de marketing online para as PMEs: QDQ media</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href='http://fonts.googleapis.com/css?family=Muli:300,400|Oswald:400,300|Oxygen' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/slider/style.css" />
+
+<!-- Le styles -->
+
+<link href="css/styles.less" rel="stylesheet/less">
+<link href="css/quienes-somos.less" rel="stylesheet/less">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/less-1.7.0.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="mainMenu">
+    <div class="wrapper">
+      <div class="navContainer">
+        <ul class="linksContainer">
+          <li><a href="" title="QDQ express"><img src="img/qdqexpress-header.png" alt="logotipo QDQ express"/></a></li>
+          <li><a href="" title="INICIO">INICIO</a></li>
+          <li><a href="" title="QUIENES SOMOS"  >QUIENES SOMOS</a></li>
+          <li><a href="" title="SERVICIOS" >SERVICIOS</a></li>
+          <li><a href="" title="CONTACTO" class="active">CONTACTO</a></li>
+        </ul>
+        <ul class="rightLinksContainer">
+          <li><a href="" title="Tu Correo" class="openIdentification">TU CORREO</a></li>
+          <li><a href="" title="Tu Web" class="openIdentification">TU WEB</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="img-holder" data-image="img/background-quienessomos2.jpg" data-width="4256" data-height="1884"  data-cover-ratio="0.5"> </div>
+<div class="wrapper tit">
+   <h1>Contáctanos</h1>
+   <p class="PhotoOwner">Autor: Gene Krasko </p>
+</div>
+ 
+<div class="scroller-content">
+  <div class="wrapper">
+    <section>
+  
+        <div class="box50">
+            <p>Escribenos a través de este formulario y nos pondremos en contacto contigo para asesorarte sobre nuestros servicios</p>
+            <form id="contacto">
+              <fieldset>
+                    <input placeholder="Nombre *" type="text" name="name" required />
+                    <input placeholder="Empresa" type="text" name="business" />
+                    <input placeholder="Correo electrónico *" type="email" name="email" required />
+                    <input placeholder="Actividad" type="text" name="activity"  />
+                    <select name="scope"  id="select-contacto">
+                        <option value="">Área geografica *</option>
+                        <option value="Local">Local</option>
+                        <option value="Provincial">Provincial</option>
+                        <option value="Provincial">Interprovincial</option>
+                        <option value="Nacional">Nacional</option>
+                        <option value="Nacional">Internacional</option> 
+                    </select>
+                    <input placeholder="Código Postal" type="text" name="postalCode">
+                    <input placeholder="Teléfono *" type="tel" name="phone" />
+                    <input placeholder="Tu web actual" type="text" name="web" />    
+                    <textarea rows="3" cols="20" name="obs">Comentarios...</textarea>
+                    <input type="checkbox" name="legal" value="yes" checked /><p><a href="aviso-legal.html" title="Aviso Legal">Aviso Legal</a> sobre recogida de datos, leído y aceptado</p>
+                    <input type="submit" name="btnEnviar"   value="enviar"  />
+                </fieldset>
+                <span class="msg"></span>
+             </form>
+        </div>
+        <div class="box50">
+            <p>También puedes contactarnos llamando a nuestro servicio de Atención al Cliente, activo de lunes a viernes, de 09:00 a 19:00</p>
+                <span  class="link">902 170 621 / 91 428 86 01</span>
+                <p>o escribiendo un correo electrónico a la dirección </p>
+                <span class="link resetText"><a href="mailto:atencionalcliente@qdqmedia.com">atencionalcliente@qdqmedia.com</a></span>
+                <p>También te ayudamos a través de las redes sociales!<br/>Nuestro twitter está activo en cualquier momento</p>
+                <span class="link resetText"> <a href="https://twitter.com/QDQteayuda" target="_blank">@QDQteayuda</a></span>
+ 
+              <h2>¿ERES CLIENTE?</h2>
+              <p>Si ya eres cliente y necesitas ayuda o información sobre los productos contratados, rellena este formulario y tu gestor se pondrá en contacto contigo.</p>
+            <span class="btn"><a title="Accede a tu Espacio Conecta" target="_blank" href="https://clientes.qdq.com/">mi espacio Qonecta</a></span>
+        
+        </div>
+    </section>
+  </div>
+</div>
+<div class="img-holder" data-image="img/background-quienessomos3.jpg" data-width="2400" data-height="1420"></div>
+<footer>
+  <div class="wrapper">
+    <address>
+    QDQ media Palácio Sotto Mayor. Rua Sousa Martins, 1 1069-316 Lisboa
+    </address>
+    <div class="logosFooter"> <a href="" title="QDQ media"><img src="img/qdqmedia-mini.png" alt="QDQ Media"></a> <a href="" title="Trazada"><img src="img/trazada-mini.png" alt="Trazada"></a> <a href="" title="OptimizaClick"><img src="img/optimizaclick-mini.png" alt="OptimizaClick"></a> </div>
+  </div>
+</footer>
+<script src="js/jquery.imageScroll.js"></script> 
+<script>
+        $('.img-holder').imageScroll({
+            image: null,
+            imageAttribute: 'image',
+         //   container: $('.imageHolder'),
+            speed: 0.2,
+            coverRatio: 0.1,
+            holderClass: 'imageHolder',
+            holderMinHeight: 400,
+          //  extraHeight: 50,
+           // mediaWidth: 2400,
+//	mediaHeight:400,
+            parallax: true,
+//            touch: false
+        });
+    </script>
+</body>
+</html>

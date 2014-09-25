@@ -1,0 +1,125 @@
+@import "variables.less";
+@import "reset.less";
+@import "mediaQueries.less";
+@import "styles.less";
+
+.overlay{
+	display:none;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 100;
+	  background-color: rgba(0,0,0,0.5); /*dim the background*/
+	}
+.background-circle{
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	//Pop Up Identificate
+	
+	.passwordReminder{
+	font-size: 0.8em;
+	float: left;
+	display: inline-block;
+	color: #FCC674;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	font-family: 'Muli', sans-serif;
+	color: #fcc674;
+	width: 100%;
+	.secondaryFont(@orange);
+	&:hover{
+		color:@white
+	}
+	}
+	.blackLoginCircle{
+		background: rgba(0,0,0,1);
+			background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 52%, rgba(0,0,0,0.86) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(52%, rgba(10,10,10,1)), color-stop(100%, rgba(0,0,0,0.86)));
+			background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 52%, rgba(0,0,0,0.86) 100%);
+			background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 52%, rgba(0,0,0,0.86) 100%);
+			background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 52%, rgba(0,0,0,0.86) 100%);
+			background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 52%, rgba(0,0,0,0.86) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+			border-radius: 50%;
+			display:block;
+			height:204px;
+			width:442px;
+			padding:8em 1%;
+			margin: 4em auto;
+			em{
+			.secondaryFont(@white);
+			display:inherit;
+			font-style:normal;
+			font-size: 1.8em;
+			font-weight:lighter;
+			position:relative;
+			text-align:center;
+			top:-2em;
+			}
+		.formularioAcceso{
+			display:block;
+			width:100%;
+			margin:0 auto;
+			z-index:50;
+			span{
+				 clear: both;
+				display: block;
+				font-size:0.9em;
+				left: 14%;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				top: -2.5em;
+				width: 75%;}
+			.error{
+				color:#fe5858;
+				}
+			input{
+				background:#2b2a29;
+				-webkit-box-shadow: inset 0px 8px 2px -6px rgba(0,0,0,0.44);
+				-moz-box-shadow: inset 0px 8px 2px -6px rgba(0,0,0,0.44);
+				box-shadow: inset 0px 8px 2px -6px rgba(0,0,0,0.44);
+				.borderRadius(5px);
+				color:#fff;
+				display:inline;
+				float:left;
+				font-size:1.2em;
+				height:2em;
+				left:14%;
+				margin:0.5em auto;
+				padding-left:1em;
+				position:relative;
+				top:-2em;
+				width:70%;
+				&[type="submit"]{
+				background:@orange;
+				border:1px solid #e0b875;
+				box-shadow: none!important;
+				color:#402b16;
+				cursor:pointer;
+				float:left;
+				font-family: 'oswald', sans-serif;
+				font-size:1.25em;
+				font-weight:bolder;
+				margin-top:0.45em;	
+				padding:0;
+				text-transform:uppercase;
+				width:74%;
+				&:hover{
+					background: @black;
+					border:1px solid #000;
+					color:@orange;
+					}
+				} 
+			}
+		}
+	}
+}
+		
+
